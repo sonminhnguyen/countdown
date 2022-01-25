@@ -1,80 +1,94 @@
 .App {
-  text-align: center;
+    text-align: center;
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+    height: 40vmin;
+    pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
 }
 
 .App-link {
-  color: #61dafb;
+    color: #61dafb;
 }
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.fireworks-container {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
 }
 
 .container {
-  background: #000000;
-  color: #E9ECEE;
-  display: flex;
-  border-radius: 4px;
-  box-sizing: border-box;
-  justify-content: center;
-  text-align: center;
-  min-height: 100vh;
-  font-size: 100px;
-  /* position: fixed;
-  width: fit-content;
-  height: inherit; */
-
-  /* top: 50%;
-  left: 50%;
-  margin: -120px 0 0 -120px;
-  padding: 20px; */
-
-  /* z-index: 1;
-  opacity: 0.9;
-  line-height: initial; */
+    color: #E9ECEE;
+    position: fixed;
+    width: fit-content;
+    height: inherit;
+    top: 50%;
+    left: 50%;
+    margin: -120px 0 0 -120px;
+    padding: 20px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 100px;
+    z-index: 1;
+    line-height: initial;
 }
 
 .small-countdown {
-  font-size: 20px;
-  align-items: flex-start;
+    margin: -400px 0 0 -50px;
+    font-size: 30px;
 }
 
 .big-countdown {
-  margin: auto;
-
-
+    margin: -180px 0 0 -180px;
 }
 
 .sound {
-  background-color: #000000;
-  background: #000000;
-  margin-top: auto;
-  position: inherit;
+    background: #808080;
+    margin-top: auto;
+    position: fixed;
+    z-index: 1;
+    line-height: initial;
+}
+
+.happynewyear {
+    margin: -350px 0 0 -350px;
+}
+
+.inputInfo {
+    background: #E9ECEE;
+    position: fixed;
+    z-index: 1;
+    line-height: initial;
 }

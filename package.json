@@ -13,6 +13,7 @@
     "react-audio-player": "^0.17.0",
     "react-bootstrap": "^2.1.1",
     "react-countdown": "^2.3.2",
+    "react-datetime-picker": "^3.4.3",
     "react-dom": "^17.0.2",
     "react-scripts": "5.0.0",
     "react-sound": "^1.2.0",
