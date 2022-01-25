@@ -29,9 +29,9 @@ const FunctionFire = () => {
         "width": "100%",
         "height": "100%",
         // "background": "#000000",
-        "background-size": "cover",
-        "background-position": "1% 10%",
-        "background-repeat": "no-repeat",
+        "backgroundSize": "cover",
+        "backgroundPosition": "1% 10%",
+        "backgroundRepeat": "no-repeat",
         "display": "block",
 	}
 

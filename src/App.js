@@ -20,7 +20,7 @@ const renderer = ({ days, hours, minutes, seconds, completed }) => {
 		// Render a big countdown
 		return (
 			<>
-				<PlaySound />
+			
 				<span className="big-countdown">
 					{zeroPad(hours)}:{zeroPad(minutes)}:{zeroPad(seconds)}
 				</span>
@@ -41,6 +41,8 @@ const renderer = ({ days, hours, minutes, seconds, completed }) => {
 const App = () => {
 	return (
 		<div className="container">
+			<PlaySound />	
+
 			<Countdown
 				// date='2022-01-26T16:52:00'
 				date={Date.now() + 65000}
