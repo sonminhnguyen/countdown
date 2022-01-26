@@ -12,7 +12,7 @@ const Context = createContext();
 
 const App = () => {
 	const [click, setClick] = useState(false)
-	const [value, onChange] = useState(new Date(Date.now() + 3600000));
+	const [value, onChange] = useState(new Date(Date.now() + 600000));
 	const [text, setText] = useState("Happy New Year")
 
 	const handleClick = () => {
@@ -35,7 +35,7 @@ const App = () => {
 					Text: <input type="text" onChange={handleText} value={text}></input>
 				</div>
 				:
-				""}
+			""}
 			<Context.Provider value={text}>
 				<PlaySound />
 				<Countdown
@@ -79,7 +79,7 @@ const renderer = ({ days, hours, minutes, seconds, completed }) => {
 	else {
 		//Render a small countdown
 		return (
-			<span className="container small-countdown">
+			<span className="small-countdown">
 				{zeroPad(hours)}:{zeroPad(minutes)}:{zeroPad(seconds)}
 			</span>
 		)

@@ -66,8 +66,16 @@
 }
 
 .small-countdown {
-    margin: -400px 0 0 -50px;
+    color: #E9ECEE;
+    position: fixed;
+    width: fit-content;
+    height: inherit;
+    left: 47%;
+    border-radius: 4px;
+    box-sizing: border-box;
     font-size: 30px;
+    z-index: 1;
+    line-height: initial;
 }
 
 .big-countdown {
@@ -83,7 +91,7 @@
 }
 
 .happynewyear {
-    margin: -350px 0 0 -350px;
+    margin: -10% 0 -0 -380px;
 }
 
 .inputInfo {
