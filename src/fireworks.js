@@ -2,11 +2,23 @@ import { Fireworks } from 'fireworks-js/dist/react'
 
 const FunctionFire = () => {
     const options = {
-        speed: 4,
+        speed: 10,
+        rocketPoint: 10,
         acceleration: 1,
+        opacity: 0.7,
+        friction: 0.98,
+        gravity: 1.5,
+        trace: 6,
+        explosion: 8,
         delay: {
-            min: 15,
-            max: 20
+            min: 8,
+            max: 10
+        },
+        particles: 200,
+        autoresize: true,
+        hue: {
+            min: 0,
+            max: 345
         },
         sound: {
             enabled: true,

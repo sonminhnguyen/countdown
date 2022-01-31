@@ -1,5 +1,6 @@
 import React, { useState, createContext, useContext } from "react";
 import Countdown, { zeroPad, calcTimeDelta, formatTimeDelta } from "react-countdown";
+
 import DateTimePicker from 'react-datetime-picker';
 import moment from "moment";
 import Button from "react-bootstrap/Button";
@@ -12,7 +13,7 @@ const Context = createContext();
 
 const App = () => {
 	const [click, setClick] = useState(false)
-	const [value, onChange] = useState(new Date(Date.now() + 600000));
+	const [value, onChange] = useState(new Date(Date.now() + 3600000));
 	const [text, setText] = useState("Happy New Year")
 
 	const handleClick = () => {
@@ -24,7 +25,7 @@ const App = () => {
 	}
 	return (
 		<div >
-			<Button style={{backgroundColor: '#808080', margin: 'auto'}} onClick={handleClick}>+</Button>
+			<Button style={{backgroundColor: '#808080', margin: 'auto', zIndex:1,  position: 'relative'}} onClick={handleClick}>+</Button>
 			{click ?
 				<div className="inputInfo">
 					<DateTimePicker
